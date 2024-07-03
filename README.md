@@ -9,7 +9,6 @@ Before starting the porting process, ensure you have the following:
 - **Tiva C Series Microcontroller**: Specifically, the TM4C123GH6PM model is used for this guide.
 - **Development Environment**: Texas Instruments' Code Composer Studio (CCS) or any other compatible IDE.
 - **AUTOSAR Port Driver Specification**: To understand the standard requirements and interfaces.
-- **TivaWare Software**: Texas Instruments' peripheral driver library for Tiva C.
 - **Basic Knowledge of AUTOSAR**: Understanding of the AUTOSAR architecture and the role of the Port Driver.
 
 ## Steps for Porting
