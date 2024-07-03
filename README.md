@@ -29,12 +29,3 @@ Before starting the porting process, ensure you have the following:
 1. **Understand AUTOSAR Port Driver Requirements**: Refer to the AUTOSAR specification for Port Driver (AUTOSAR_SWS_PortDriver).
 2. **Define Port Driver API**: Implement the required functions such as `Port_Init`, `Port_SetPinDirection`, `Port_RefreshPortDirection`, `Port_GetVersionInfo`, and `Port_SetPinMode`.
 
-### 4. Map AUTOSAR API to TivaWare Functions
-
-1. **Initialize Ports (Port_Init)**: Use the TivaWare `SysCtlPeripheralEnable` and `GPIOPinTypeGPIOOutput` functions to initialize the ports.
-   ```c
-   void Port_Init(const Port_ConfigType* ConfigPtr) {
-       // Example: Enable the GPIO port for pin configuration
-       SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
-       GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3);
-   }
